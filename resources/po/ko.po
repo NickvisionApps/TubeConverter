@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-15 09:12-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2025-01-05 22:22+0000\n"
 "Last-Translator: parkyuno <yuno3587@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/nickvision-tube-"
@@ -116,7 +116,6 @@ msgid "translator-credits"
 msgstr "번역자 크레딧"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:266
-#, c++-format
 msgid "Recovered {} download"
 msgid_plural "Recovered {} downloads"
 msgstr[0] "다운로드 {} 개가 복구됨"
@@ -134,7 +133,6 @@ msgid "Download Finished"
 msgstr "다운로드 완료"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:378
-#, c++-format
 msgid "{} has finished downloading"
 msgstr "{}의 다운로드가 완료되었습니다"
 
@@ -143,7 +141,6 @@ msgid "Download Finished With Error"
 msgstr "다운로드가 실패했습니다"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:382
-#, c++-format
 msgid "{} has finished with an error"
 msgstr "{}의 작업이 오류로 종료되었습니다"
 
@@ -156,22 +153,18 @@ msgid "All downloads have finished"
 msgstr "모든 다운로드가 완료되었습니다"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:21
-#, c++-format
 msgid "{:.2f} GiB/s"
 msgstr "{:.2f} GiB/초"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:25
-#, c++-format
 msgid "{:.2f} MiB/s"
 msgstr "{:.2f} MiB/초"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:29
-#, c++-format
 msgid "{:.2f} KiB/s"
 msgstr "{:.2f} KiB/초"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:33
-#, c++-format
 msgid "{:.2f} B/s"
 msgstr "{:.2f} B/초"
 
@@ -1055,12 +1048,10 @@ msgid "No Subtitles Available"
 msgstr "사용 가능한 자막이 없습니다"
 
 #: org.nickvision.tubeconverter.gnome/src/views/adddownloaddialog.cpp:219
-#, c++-format
 msgid "{} items"
 msgstr "{} 항목"
 
 #: org.nickvision.tubeconverter.gnome/src/views/credentialdialog.cpp:15
-#, c++-format
 msgid ""
 "{} needs a credential to download.\n"
 "Please select or enter one to use."
@@ -1186,7 +1177,6 @@ msgid "Changelog:"
 msgstr "변경 사항:"
 
 #: org.nickvision.tubeconverter.qt/src/controls/aboutdialog.cpp:39
-#, c++-format
 msgid ""
 "Developers:\n"
 "{}\n"
@@ -1264,13 +1254,11 @@ msgstr ""
 "에서 선택한 브라우저의 쿠키를 확인하세요."
 
 #: org.nickvision.tubeconverter.qt/src/views/adddownloaddialog.cpp:237
-#, c++-format
 msgid "Items ({})"
 msgstr "항목 ({})"
 
 #. Localize Strings
 #: org.nickvision.tubeconverter.qt/src/views/credentialdialog.cpp:20
-#, c++-format
 msgid "{} needs a credential to download. Please select or enter one to use."
 msgstr ""
 "{}는 다운로드를 위한 자격 증명이 필요합니다. 사용할 자격 증명을 선택하거나 입"
