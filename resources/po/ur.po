@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-15 09:12-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2023-10-09 05:02+0000\n"
 "Last-Translator: Abdur Rehman Imran <arehmanimran4@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/nickvision-tube-"
@@ -124,7 +124,7 @@ msgid "translator-credits"
 msgstr "مترجم کی خدمات کا اعتراف"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:266
-#, fuzzy, c++-format
+#, fuzzy
 msgid "Recovered {} download"
 msgid_plural "Recovered {} downloads"
 msgstr[0] "ناکام ڈاؤن لوڈز کو ڈاؤن لوڈ کرنے کی دوبارہ کوشش کریں"
@@ -143,7 +143,7 @@ msgid "Download Finished"
 msgstr "ڈاؤن لوڈ مکمل"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:378
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished downloading"
 msgstr "{0} کا ڈاؤن لوڈ مکمل کر لیا ہے۔"
 
@@ -152,7 +152,7 @@ msgid "Download Finished With Error"
 msgstr "خرابی کے ساتھ ڈاؤن لوڈ مکمل ہو گیا"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:382
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished with an error"
 msgstr "{0} ایک خرابی کے ساتھ ختم ہو گیا ہے!"
 
@@ -166,22 +166,22 @@ msgid "All downloads have finished"
 msgstr "تمام ڈاؤن لوڈز مکمل ہو چکے ہیں۔"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:21
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{:.2f} GiB/s"
 msgstr "{0:f1} GiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:25
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{:.2f} MiB/s"
 msgstr "{0:f1} MiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:29
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{:.2f} KiB/s"
 msgstr "{0:f1} KiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:33
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{:.2f} B/s"
 msgstr "{0:f1} B/s"
 
@@ -1102,12 +1102,11 @@ msgid "No Subtitles Available"
 msgstr "سب ٹائٹل کی زبانیں (غلط)"
 
 #: org.nickvision.tubeconverter.gnome/src/views/adddownloaddialog.cpp:219
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} items"
 msgstr "{0} میں سے {1} چیز"
 
 #: org.nickvision.tubeconverter.gnome/src/views/credentialdialog.cpp:15
-#, c++-format
 msgid ""
 "{} needs a credential to download.\n"
 "Please select or enter one to use."
@@ -1238,7 +1237,6 @@ msgid "Changelog:"
 msgstr "فہرست رَدّ و بَدَل"
 
 #: org.nickvision.tubeconverter.qt/src/controls/aboutdialog.cpp:39
-#, c++-format
 msgid ""
 "Developers:\n"
 "{}\n"
@@ -1318,13 +1316,12 @@ msgid ""
 msgstr ""
 
 #: org.nickvision.tubeconverter.qt/src/views/adddownloaddialog.cpp:237
-#, fuzzy, c++-format
+#, fuzzy
 msgid "Items ({})"
 msgstr "{0} میں سے {1} چیز"
 
 #. Localize Strings
 #: org.nickvision.tubeconverter.qt/src/views/credentialdialog.cpp:20
-#, c++-format
 msgid "{} needs a credential to download. Please select or enter one to use."
 msgstr ""
 
