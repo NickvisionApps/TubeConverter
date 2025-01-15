@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-15 09:12-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2024-10-31 14:00+0000\n"
 "Last-Translator: Ricardo Simões <xmcorporation@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
@@ -116,7 +116,6 @@ msgid "translator-credits"
 msgstr "Ricardo Simões https://github.com/Ricardo-Simoes"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:266
-#, c++-format
 msgid "Recovered {} download"
 msgid_plural "Recovered {} downloads"
 msgstr[0] "Transferência {} recuperada"
@@ -135,7 +134,7 @@ msgid "Download Finished"
 msgstr "Transferência Terminada"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:378
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished downloading"
 msgstr "\"{0}\" terminou de ser transferido."
 
@@ -144,7 +143,7 @@ msgid "Download Finished With Error"
 msgstr "Transferência Terminada com Erro"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:382
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished with an error"
 msgstr "\"{0}\" terminou com um erro!"
 
@@ -158,22 +157,18 @@ msgid "All downloads have finished"
 msgstr "Terminaram todas as transferências."
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:21
-#, c++-format
 msgid "{:.2f} GiB/s"
 msgstr "{:.2f} GiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:25
-#, c++-format
 msgid "{:.2f} MiB/s"
 msgstr "{:.2f} MiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:29
-#, c++-format
 msgid "{:.2f} KiB/s"
 msgstr "{:.2f} KiB/s"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:33
-#, c++-format
 msgid "{:.2f} B/s"
 msgstr "{:.2f} B/s"
 
@@ -1068,12 +1063,10 @@ msgid "No Subtitles Available"
 msgstr "Sem Legendas Disponíveis"
 
 #: org.nickvision.tubeconverter.gnome/src/views/adddownloaddialog.cpp:219
-#, c++-format
 msgid "{} items"
 msgstr "{} items"
 
 #: org.nickvision.tubeconverter.gnome/src/views/credentialdialog.cpp:15
-#, c++-format
 msgid ""
 "{} needs a credential to download.\n"
 "Please select or enter one to use."
@@ -1200,7 +1193,6 @@ msgid "Changelog:"
 msgstr "Histórico de Mudanças:"
 
 #: org.nickvision.tubeconverter.qt/src/controls/aboutdialog.cpp:39
-#, c++-format
 msgid ""
 "Developers:\n"
 "{}\n"
@@ -1278,13 +1270,11 @@ msgstr ""
 "autenticação usada, e as definições dos cookies para o navegador selecionado."
 
 #: org.nickvision.tubeconverter.qt/src/views/adddownloaddialog.cpp:237
-#, c++-format
 msgid "Items ({})"
 msgstr "Itens ({})"
 
 #. Localize Strings
 #: org.nickvision.tubeconverter.qt/src/views/credentialdialog.cpp:20
-#, c++-format
 msgid "{} needs a credential to download. Please select or enter one to use."
 msgstr ""
 "{} precisa de credencial para transferir. Por favor selecione ou insira uma "

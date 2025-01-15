@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-09 16:24-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2023-10-09 05:02+0000\n"
 "Last-Translator: Abdur Rehman Imran <arehmanimran4@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/nickvision-tube-"

@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-01-09 16:24-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2025-01-10 12:15+0000\n"
 "Last-Translator: Fjuro <fjuro@alius.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/"
-"nickvision-tube-converter/docs/cs/>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/nickvision-tube-"
+"converter/docs/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -979,7 +979,8 @@ msgstr ""
 #: docs/yelp/C/newDownload.page:53
 msgid ""
 "Each format is the form: <code>resolution | bitrate | codec (id)</code>."
-msgstr "Každý formát má tvar: <code>rozlišení | datový tok | kodek (id)</code>."
+msgstr ""
+"Každý formát má tvar: <code>rozlišení | datový tok | kodek (id)</code>."
 
 #. (itstool) path: item/p
 #: docs/yelp/C/newDownload.page:54
