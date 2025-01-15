@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-15 09:12-0500\n"
+"POT-Creation-Date: 2025-01-15 09:18-0500\n"
 "PO-Revision-Date: 2024-10-31 14:27+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/nickvision-tube-"
@@ -120,7 +120,6 @@ msgstr ""
 "מיזם תרגום GNOME לעברית https://l10n.gnome.org/teams/he/"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:266
-#, c++-format
 msgid "Recovered {} download"
 msgid_plural "Recovered {} downloads"
 msgstr[0] "הורדה שוחזרה"
@@ -141,7 +140,7 @@ msgid "Download Finished"
 msgstr "הורדה הסתיימה"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:378
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished downloading"
 msgstr "הסתיימה הורדת „{0}”."
 
@@ -150,7 +149,7 @@ msgid "Download Finished With Error"
 msgstr "הורדה הסתיימה עם שגיאה"
 
 #: libparabolic/src/controllers/mainwindowcontroller.cpp:382
-#, fuzzy, c++-format
+#, fuzzy
 msgid "{} has finished with an error"
 msgstr "הורדת „{0}” הסתיימה עם שגיאה!"
 
@@ -164,22 +163,18 @@ msgid "All downloads have finished"
 msgstr "הסתיימו כל ההורדות."
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:21
-#, c++-format
 msgid "{:.2f} GiB/s"
 msgstr "‏{:.2f} גיב״ב/שנ׳"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:25
-#, c++-format
 msgid "{:.2f} MiB/s"
 msgstr "‏{:.2f} מבי״ב/שנ׳"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:29
-#, c++-format
 msgid "{:.2f} KiB/s"
 msgstr "‏{:.2f} קי״ב/שנ׳"
 
 #: libparabolic/src/events/downloadprogresschangedeventargs.cpp:33
-#, c++-format
 msgid "{:.2f} B/s"
 msgstr "‏{:.2f} בית/שנ׳"
 
@@ -1063,12 +1058,10 @@ msgid "No Subtitles Available"
 msgstr "אין כתוביות זמינות"
 
 #: org.nickvision.tubeconverter.gnome/src/views/adddownloaddialog.cpp:219
-#, c++-format
 msgid "{} items"
 msgstr "{} פריטים"
 
 #: org.nickvision.tubeconverter.gnome/src/views/credentialdialog.cpp:15
-#, c++-format
 msgid ""
 "{} needs a credential to download.\n"
 "Please select or enter one to use."
@@ -1194,7 +1187,6 @@ msgid "Changelog:"
 msgstr "יומן שינויים:"
 
 #: org.nickvision.tubeconverter.qt/src/controls/aboutdialog.cpp:39
-#, c++-format
 msgid ""
 "Developers:\n"
 "{}\n"
@@ -1274,13 +1266,11 @@ msgstr ""
 "האישורים שבשימוש ואת הדפדפן שנבחר עבור העוגיות בהגדרות."
 
 #: org.nickvision.tubeconverter.qt/src/views/adddownloaddialog.cpp:237
-#, c++-format
 msgid "Items ({})"
 msgstr "פריטים ({})"
 
 #. Localize Strings
 #: org.nickvision.tubeconverter.qt/src/views/credentialdialog.cpp:20
-#, c++-format
 msgid "{} needs a credential to download. Please select or enter one to use."
 msgstr "נדרשים פרטי גישה כדי לגשת אל {}. נא לבחור או למלא פרטי גישה לשימוש."
 
