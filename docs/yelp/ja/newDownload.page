@@ -51,7 +51,7 @@
         </note>
     </item>
     <item>
-        <title>Video Format</title>
+        <title>動画のファイル形式</title>
         <p>The list of video formats available for download, sorted by resolution and bitrate.</p>
         <p>Each format is the form: <code>resolution | bitrate | codec (id)</code>.</p>
         <p>If the file type is an audio type, this option will not be available.</p>
@@ -60,7 +60,7 @@
         </note>
     </item>
     <item>
-        <title>Audio Format</title>
+        <title>音声のファイル形式</title>
         <p>The list of audio formats available for download, sorted by bitrate.</p>
         <p>Each format is the form: <code>bitrate | language (id)</code>.</p>
         <note>

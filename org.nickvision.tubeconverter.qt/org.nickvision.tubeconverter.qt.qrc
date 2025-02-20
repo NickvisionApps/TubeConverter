@@ -1,7 +1,0 @@
-<RCC>
-  <qresource>
-    <file>../resources/org.nickvision.tubeconverter.ico</file>
-    <file>../resources/org.nickvision.tubeconverter.svg</file>
-    <file>../resources/org.nickvision.tubeconverter-devel.svg</file>
-  </qresource>
-</RCC>

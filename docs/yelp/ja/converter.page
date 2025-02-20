@@ -43,9 +43,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
+        <title>字幕を埋め込む</title>
         <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <p>ファイル形式が埋め込みに対応していない場合は、サムネイルは独立した画像ファイルとして保存されます。</p>
         <note style="advanced">
             <p>デフォルト: オン</p>
         </note>
@@ -69,7 +69,7 @@
     </item>
     <item>
         <title>字幕を埋め込む</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>無効化されていたり、埋め込みが対応されていない場合は、ダウンロードされた字幕は独立したファイルに保存されます。</p>
         <note style="advanced">
             <p>デフォルト: オン</p>
         </note>

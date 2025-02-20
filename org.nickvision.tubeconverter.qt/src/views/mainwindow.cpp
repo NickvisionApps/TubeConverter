@@ -44,11 +44,12 @@ namespace Nickvision::TubeConverter::Qt::Views
         Settings
     };
 
-    MainWindow::MainWindow(const std::shared_ptr<MainWindowController>& controller, QWidget* parent) 
+    MainWindow::MainWindow(const std::shared_ptr<MainWindowController>& controller, oclero::qlementine::ThemeManager* themeManager, QWidget* parent) 
         : QMainWindow{ parent },
         m_ui{ new Ui::MainWindow() },
         m_navigationBar{ new NavigationBar(this) },
-        m_controller{ controller }
+        m_controller{ controller },
+        m_themeManager{ themeManager }
     {
         m_ui->setupUi(this);
         m_ui->mainLayout->insertLayout(0, m_navigationBar);
@@ -151,13 +152,10 @@ namespace Nickvision::TubeConverter::Qt::Views
 #else
         const StartupInformation& info{ m_controller->startup() };
 #endif
+        setGeometry(QWidget::geometry().x(), QWidget::geometry().y(), info.getWindowGeometry().getWidth(), info.getWindowGeometry().getHeight());
         if(info.getWindowGeometry().isMaximized())
         {
             showMaximized();
-        }
-        else
-        {
-            setGeometry(QWidget::geometry().x(), QWidget::geometry().y(), info.getWindowGeometry().getWidth(), info.getWindowGeometry().getHeight());
         }
         m_navigationBar->selectItem("home");
         m_ui->btnHomeAddDownload->setEnabled(info.canDownload());
@@ -225,7 +223,7 @@ namespace Nickvision::TubeConverter::Qt::Views
             m_ui->viewStack->removeWidget(oldSettings);
             delete oldSettings;
         }
-        m_ui->viewStack->insertWidget(Page::Settings, new SettingsPage(m_controller->createPreferencesViewController(), this));
+        m_ui->viewStack->insertWidget(Page::Settings, new SettingsPage(m_controller->createPreferencesViewController(), m_themeManager, this));
         //Navigate to new page
         if(id == "home")
         {
@@ -415,7 +413,6 @@ namespace Nickvision::TubeConverter::Qt::Views
 
     void MainWindow::onShellNotificationSent(const ShellNotificationSentEventArgs& args)
     {
-        m_controller->log(Logging::LogLevel::Info, "ShellNotification sent. (" + args.getMessage() + ")");
 #ifdef _WIN32
         ShellNotification::send(args, reinterpret_cast<HWND>(winId()));
 #elif defined(__linux__)

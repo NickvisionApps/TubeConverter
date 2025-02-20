@@ -12,8 +12,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
-            "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56"
+            "url": "https://files.pythonhosted.org/packages/38/fc/bce832fd4fd99766c04d1ee0eead6b0ec6486fb100ae5e74c1d91292b982/certifi-2025.1.31-py3-none-any.whl",
+            "sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe"
         },
         {
             "type": "file",
@@ -62,13 +62,13 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/94/54/8359678c726243d19fae38ca14a334e740782336c9f19700858c4eb64a1e/websockets-14.2.tar.gz",
-            "sha256": "5059ed9c54945efb321f097084b4c7e52c246f2c869815876a69d1efc4ad6eb5"
+            "url": "https://files.pythonhosted.org/packages/2e/7a/8bc4d15af7ff30f7ba34f9a172063bfcee9f5001d7cef04bee800a658f33/websockets-15.0.tar.gz",
+            "sha256": "ca36151289a15b39d8d683fd8b7abbe26fc50be311066c5f8dcf3cb8cee107ab"
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/33/9b/1b28a179fb4e1c751ab2a3d39c82606a9754a0d4521d7a9b7579e08aa5f8/yt_dlp-2025.1.26-py3-none-any.whl",
-            "sha256": "3e76bd896b9f96601021ca192ca0fbdd195e3c3dcc28302a3a34c9bc4979da7b"
+            "url": "https://files.pythonhosted.org/packages/9e/45/6d1b759e68f5363b919828fb0e0c167a1cd5003b5b7c74cc0f0c2096be4f/yt_dlp-2025.2.19-py3-none-any.whl",
+            "sha256": "3ed218eaeece55e9d715afd41abc450dc406ee63bf79355169dfde312d38fdb8"
         }
     ]
 }

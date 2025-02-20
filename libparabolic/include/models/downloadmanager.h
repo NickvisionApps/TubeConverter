@@ -9,7 +9,6 @@
 #include <libnick/events/event.h>
 #include <libnick/events/parameventargs.h>
 #include <libnick/keyring/credential.h>
-#include <libnick/logging/logger.h>
 #include "historicdownload.h"
 #include "download.h"
 #include "downloaderoptions.h"
@@ -33,9 +32,8 @@ namespace Nickvision::TubeConverter::Shared::Models
          * @brief Constructs a DownloadManager.
          * @param options The DownloaderOptions
          * @param history The DownloadHistory
-         * @param logger The Logger
          */
-        DownloadManager(const DownloaderOptions& options, DownloadHistory& history, DownloadRecoveryQueue& recoveryQueue, Logging::Logger& logger);
+        DownloadManager(const DownloaderOptions& options, DownloadHistory& history, DownloadRecoveryQueue& recoveryQueue);
         /**
          * @brief Destructs a DownloadManager.
          */
@@ -222,7 +220,6 @@ namespace Nickvision::TubeConverter::Shared::Models
         DownloaderOptions m_options;
         DownloadHistory& m_history;
         DownloadRecoveryQueue& m_recoveryQueue;
-        Logging::Logger& m_logger;
         std::unordered_map<int, std::shared_ptr<Download>> m_downloading;
         std::unordered_map<int, std::shared_ptr<Download>> m_queued;
         std::unordered_map<int, std::shared_ptr<Download>> m_completed;

@@ -54,7 +54,7 @@
         </note>
     </item>
     <item>
-        <title>Audio Format</title>
+        <title>Helivorming</title>
         <p>The list of audio formats available for download, sorted by bitrate.</p>
         <p>Each format is the form: <code>bitrate | language (id)</code>.</p>
         <note>

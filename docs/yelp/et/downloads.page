@@ -39,11 +39,11 @@
         </note>
     </item>
     <item>
-		<title>Limit Filename Characters</title>
-		<p>Restricts characters in filenames to only those supported by Windows.</p>
+		<title>Piira failinimedes kasutatavaid tähemärke</title>
+		<p>Kasuta vaid sellised tähemärke, mida Windows oskab lugeda.</p>
         <p>This option is only available on Linux.</p>
 		<note style="advanced">
-			<p>Default: Off</p>
+			<p>Vakimisi: pole kasutusel</p>
 		</note>
     </item>
     <item>
@@ -61,14 +61,14 @@
         </note>
     </item>
     <item>
-        <title>Preferred Video Codec</title>
+        <title>Eelistatud videokoodek</title>
         <p>The video codec Parabolic should prefer when selecting media formats to download.</p>
         <note style="advanced">
             <p>Default: Any</p>
         </note>
     </item>
     <item>
-        <title>Preferred Subtitle Format</title>
+        <title>Eelistatud subtiitrivorming</title>
         <p>The file format Parabolic should ensure all downloaded subtitles are downloaded as.</p>
         <note style="advanced">
             <p>Default: Any</p>

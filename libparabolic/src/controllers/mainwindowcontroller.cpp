@@ -35,15 +35,14 @@ namespace Nickvision::TubeConverter::Shared::Controllers
         m_args{ args },
         m_appInfo{ "org.nickvision.tubeconverter", "Nickvision Parabolic", "Parabolic" },
         m_dataFileManager{ m_appInfo.getName() },
-        m_logger{ UserDirectories::get(ApplicationUserDirectory::LocalData, m_appInfo.getName()) / "log.txt", Logging::LogLevel::Info, false },
         m_keyring{ m_appInfo.getId() },
-        m_downloadManager{ m_dataFileManager.get<Configuration>("config").getDownloaderOptions(), m_dataFileManager.get<DownloadHistory>("history"), m_dataFileManager.get<DownloadRecoveryQueue>("recovery"), m_logger },
+        m_downloadManager{ m_dataFileManager.get<Configuration>("config").getDownloaderOptions(), m_dataFileManager.get<DownloadHistory>("history"), m_dataFileManager.get<DownloadRecoveryQueue>("recovery") },
         m_isWindowActive{ false }
     {
-        m_appInfo.setVersion({ "2025.1.4" });
+        m_appInfo.setVersion({ "2025.2.0-next" });
         m_appInfo.setShortName(_("Parabolic"));
         m_appInfo.setDescription(_("Download web video and audio"));
-        m_appInfo.setChangelog("- Added a new Embed Thumbnails option in Preferences to enable/disable Parabolic's downloading of thumbnails separate from metadata\n- Added a disclaimer about embedding thumbnails/subtitles when using generic file types\n- Fixed an issue where the incorrect previous video and/or audio format was selected\n- Fixed an issue where chapters were embedded even if the option was disabled\n- Fixed an issue where splitting media by chapters would result in incorrect media lengths in the split files\n- Fixed an issue where video and audio formats were not selectable on GNOME");
+        m_appInfo.setChangelog("- Updated yt-dlp to fix some website validation issues");
         m_appInfo.setSourceRepo("https://github.com/NickvisionApps/Parabolic");
         m_appInfo.setIssueTracker("https://github.com/NickvisionApps/Parabolic/issues/new");
         m_appInfo.setSupportUrl("https://github.com/NickvisionApps/Parabolic/discussions");
@@ -62,22 +61,6 @@ namespace Nickvision::TubeConverter::Shared::Controllers
 #endif
         m_dataFileManager.get<Configuration>("config").saved() += [this](const EventArgs&){ onConfigurationSaved(); };
         m_downloadManager.downloadCompleted() += [this](const DownloadCompletedEventArgs& args) { onDownloadCompleted(args); };
-        //Log information
-        if(!m_keyring.isSavingToDisk())
-        {
-            m_logger.log(Logging::LogLevel::Warning, "Keyring not being saved to disk.");
-        }
-        if(m_dataFileManager.get<Configuration>("config").getPreventSuspend())
-        {
-            if(m_suspendInhibitor.inhibit())
-            {
-                m_logger.log(Logging::LogLevel::Info, "Inhibited system suspend.");
-            }
-            else
-            {
-                m_logger.log(Logging::LogLevel::Error, "Unable to inhibit system suspend.");
-            }
-        }
     }
 
     const AppInfo& MainWindowController::getAppInfo() const
@@ -213,41 +196,15 @@ namespace Nickvision::TubeConverter::Shared::Controllers
         info.setWindowGeometry(m_dataFileManager.get<Configuration>("config").getWindowGeometry());
         //Load taskbar item
 #ifdef _WIN32
-        if(m_taskbar.connect(hwnd))
-        {
-            m_logger.log(Logging::LogLevel::Info, "Connected to Windows taskbar.");
-        }
-        else
-        {
-            m_logger.log(Logging::LogLevel::Error, "Unable to connect to Windows taskbar.");
-        }
+        m_taskbar.connect(hwnd);
         if (m_dataFileManager.get<Configuration>("config").getAutomaticallyCheckForUpdates())
         {
             checkForUpdates();
         }
 #elif defined(__linux__)
-        if(m_taskbar.connect(desktopFile))
-        {
-            m_logger.log(Logging::LogLevel::Info, "Connected to Linux taskbar.");
-        }
-        else
-        {
-            m_logger.log(Logging::LogLevel::Error, "Unable to connect to Linux taskbar.");
-        }
+        m_taskbar.connect(desktopFile);
 #endif
         //Check if can download
-        if(Environment::findDependency("yt-dlp").empty())
-        {
-            m_logger.log(Logging::LogLevel::Error, "yt-dlp not found.");
-        }
-        if(Environment::findDependency("ffmpeg").empty())
-        {
-            m_logger.log(Logging::LogLevel::Error, "ffmpeg not found.");
-        }
-        if(Environment::findDependency("aria2c").empty())
-        {
-            m_logger.log(Logging::LogLevel::Error, "aria2c not found.");
-        }
         info.setCanDownload(!Environment::findDependency("yt-dlp").empty() && !Environment::findDependency("ffmpeg").empty() && !Environment::findDependency("aria2c").empty());
         //Check if disclaimer should be shown
         info.setShowDisclaimer(m_dataFileManager.get<Configuration>("config").getShowDisclaimerOnStartup());
@@ -283,25 +240,15 @@ namespace Nickvision::TubeConverter::Shared::Controllers
         {
             return;
         }
-        m_logger.log(Logging::LogLevel::Info, "Checking for updates...");
         std::thread worker{ [this]()
         {
             Version latest{ m_updater->fetchCurrentVersion(VersionType::Stable) };
-            if (!latest.empty())
+            if(!latest.empty())
             {
-                if (latest > m_appInfo.getVersion())
+                if(latest > m_appInfo.getVersion())
                 {
-                    m_logger.log(Logging::LogLevel::Info, "Update found: " + latest.str());
                     m_notificationSent.invoke({ _("New update available"), NotificationSeverity::Success, "update" });
                 }
-                else
-                {
-                    m_logger.log(Logging::LogLevel::Info, "No updates found.");
-                }
-            }
-            else
-            {
-                m_logger.log(Logging::LogLevel::Warning, "Unable to fetch latest app version.");
             }
         } };
         worker.detach();
@@ -314,17 +261,11 @@ namespace Nickvision::TubeConverter::Shared::Controllers
         {
             return;
         }
-        m_logger.log(Logging::LogLevel::Info, "Fetching Windows app update...");
         m_notificationSent.invoke({ _("The update is downloading in the background and will start once it finishes"), NotificationSeverity::Informational });
         std::thread worker{ [this]()
         {
-            if (m_updater->windowsUpdate(VersionType::Stable))
+            if(!m_updater->windowsUpdate(VersionType::Stable))
             {
-                m_logger.log(Logging::LogLevel::Info, "Windows app update started.");
-            }
-            else
-            {
-                m_logger.log(Logging::LogLevel::Error, "Unable to fetch Windows app update.");
                 m_notificationSent.invoke({ _("Unable to download and install update"), NotificationSeverity::Error, "error" });
             }
         } };
@@ -332,35 +273,15 @@ namespace Nickvision::TubeConverter::Shared::Controllers
     }
 #endif
 
-    void MainWindowController::log(Logging::LogLevel level, const std::string& message, const std::source_location& source)
-    {
-        m_logger.log(level, message, source);
-    }
-
     void MainWindowController::onConfigurationSaved()
     {
-        m_logger.log(Logging::LogLevel::Info, "Configuration saved.");
         if(m_dataFileManager.get<Configuration>("config").getPreventSuspend())
         {
-            if(m_suspendInhibitor.inhibit())
-            {
-                m_logger.log(Logging::LogLevel::Info, "Inhibited system suspend.");
-            }
-            else
-            {
-                m_logger.log(Logging::LogLevel::Error, "Unable to inhibit system suspend.");
-            }
+            m_suspendInhibitor.inhibit();
         }
         else
         {
-            if(m_suspendInhibitor.uninhibit())
-            {
-                m_logger.log(Logging::LogLevel::Info, "Uninhibited system suspend.");
-            }
-            else
-            {
-                m_logger.log(Logging::LogLevel::Error, "Unable to uninhibit system suspend.");
-            }
+            m_suspendInhibitor.uninhibit();
         }
         m_downloadManager.setDownloaderOptions(m_dataFileManager.get<Configuration>("config").getDownloaderOptions());
     }

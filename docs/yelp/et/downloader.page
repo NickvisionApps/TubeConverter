@@ -14,7 +14,7 @@
 	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
 </info>
 
-<title>Downloader</title>
+<title>Allalaadija</title>
 <p>This page explains all options for configuring the Downloader in Preferences in <app>Parabolic</app>.</p>
 
 <terms>
@@ -26,13 +26,13 @@
         </note>
     </item>
     <item>
-        <title>Use SponsorBlock for YouTube</title>
+        <title>Kasuta YouTube'i jaoks SponsorBlockki</title>
         <p>If enabled, Parabolic will apply the SponsorBlock extension to YouTube downloads.</p>
         <note>
             <p>SponsorBlock only works on YouTube videos. However, leaving this setting on will not affect downloads from other sites (i.e. not cause them to fail).</p>
         </note>
         <note style="advanced">
-            <p>Default: Off</p>
+            <p>Vakimisi: pole kasutusel</p>
         </note>
     </item>
     <item>
@@ -43,14 +43,14 @@
 		</note>
     </item>
     <item>
-        <title>Proxy URL</title>
+        <title>Proksiserveri aadress</title>
         <p>The url of the proxy server to use.</p>
         <note style="advanced">
 			<p>Default: No URL</p>
 		</note>
     </item>
     <item>
-        <title>Cookies from Browser</title>
+        <title>Brauseri küpsised</title>
         <p>A browser in which to read cookies from and pass to yt-dlp's download engine.</p>
         <p>This may be useful when downloading media that requires a login, for example: private YouTube videos.</p>
         <p>This option is on available on non sandboxed platforms.</p>

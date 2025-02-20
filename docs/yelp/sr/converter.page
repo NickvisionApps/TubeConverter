@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="converter" its:version="2.0" xml:lang="sr">
+<info>
+	<link type="guide" xref="index"/>
+	<title type="link">Converter ⚒️</title>
+	<credit type="author copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<credit type="publisher copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
+</info>
+
+<title>Converter</title>
+<p>This page explains all options for configuring the Converter in Preferences in <app>Parabolic</app>.</p>
+
+<terms>
+    <item>
+        <title>Embed Metadata</title>
+        <p>If enabled, Parabolic will tag a media with its relevant information (title, genre, etc...) if available.</p>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+        <title>Remove Source Data</title>
+        <p>If enabled, Parabolic will clear metadata fields containing the URL and other identifying information of the media source.</p>
+        <p>Fields that are cleared: <code>comment</code>, <code>description</code>, <code>synopsis</code>, <code>purl</code> and <code>handler_name</code> in each stream.</p>
+        <note>
+            <p>This option is only configurable if <code>Embed Metadata</code> is on.</p>
+        </note>
+        <note style="advanced">
+            <p>Default: Off</p>
+        </note>
+    </item>
+    <item>
+        <title>Embed Thumbnails</title>
+        <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
+        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+        <title>Crop Audio Thumbnails</title>
+        <p>If enabled, Parabolic will crop thumbnails for audio files to be a square resolution.</p>
+        <note>
+            <p>This option is only configurable if <code>Embed Thumbnails</code> is on.</p>
+        </note>
+        <note style="advanced">
+            <p>Default: Off</p>
+        </note>
+    </item>
+    <item>
+        <title>Embed Chapters</title>
+        <p>If enabled, Parabolic will tag a media with chapter information if available.</p>
+        <note style="advanced">
+            <p>Default: Off</p>
+        </note>
+    </item>
+    <item>
+        <title>Embed Subtitles</title>
+        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+        <title>Postprocessing Threads</title>
+        <p>The number of threads to allow the postprocessor (<code>FFmpeg</code>) to use for each download.</p>
+        <note style="advanced">
+            <p>Default: The max number of threads available on the system</p>
+        </note>
+    </item>
+</terms>
+</page>

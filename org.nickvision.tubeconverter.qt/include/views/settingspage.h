@@ -4,6 +4,7 @@
 #include <memory>
 #include <QCloseEvent>
 #include <QWidget>
+#include <oclero/qlementine/style/ThemeManager.hpp>
 #include "controllers/preferencesviewcontroller.h"
 
 namespace Ui { class SettingsPage; }
@@ -23,7 +24,7 @@ namespace Nickvision::TubeConverter::Qt::Views
          * @param controller The PreferencesViewController
          * @param parent The parent widget
          */
-        SettingsPage(const std::shared_ptr<Shared::Controllers::PreferencesViewController>& controller, QWidget* parent = nullptr);
+        SettingsPage(const std::shared_ptr<Shared::Controllers::PreferencesViewController>& controller, oclero::qlementine::ThemeManager* themeManager, QWidget* parent = nullptr);
         /**
          * @brief Destructs a SettingsPage.
          */
@@ -63,6 +64,7 @@ namespace Nickvision::TubeConverter::Qt::Views
     private:
         Ui::SettingsPage* m_ui;
         std::shared_ptr<Shared::Controllers::PreferencesViewController> m_controller;
+        oclero::qlementine::ThemeManager* m_themeManager;
     };
 }
 

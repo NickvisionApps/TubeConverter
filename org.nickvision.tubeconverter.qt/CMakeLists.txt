@@ -8,12 +8,15 @@ set(DBUS_ACTIVATABLE false)
 add_definitions(-DQT_NO_KEYWORDS)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Svg)
+find_package(qlementine CONFIG REQUIRED)
+find_package(qlementine-icons CONFIG REQUIRED)
 qt_standard_project_setup()
 
 qt_add_executable(${OUTPUT_NAME}
     "include/controls/aboutdialog.h"
     "include/controls/downloadrow.h"
     "include/controls/historyrow.h"
+    "include/controls/infobar.h"
     "include/controls/keyringrow.h"
     "include/controls/navigationbar.h"
     "include/helpers/closeeventfilter.h"
@@ -24,12 +27,12 @@ qt_add_executable(${OUTPUT_NAME}
     "include/views/mainwindow.h"
     "include/views/settingspage.h"
     "include/application.h"
-    "src/controls/aboutdialog.ui"
     "src/controls/aboutdialog.cpp"
     "src/controls/downloadrow.ui"
     "src/controls/downloadrow.cpp"
     "src/controls/historyrow.ui"
     "src/controls/historyrow.cpp"
+    "src/controls/infobar.cpp"
     "src/controls/keyringrow.ui"
     "src/controls/keyringrow.cpp"
     "src/controls/navigationbar.cpp"
@@ -47,10 +50,10 @@ qt_add_executable(${OUTPUT_NAME}
     "src/views/settingspage.cpp"
     "src/application.cpp"
     "src/main.cpp"
-    "${OUTPUT_NAME}.qrc"
-    "${OUTPUT_NAME}.rc")
+    "resources/${OUTPUT_NAME}.qrc"
+    "../resources/windows/${PROJECT_NAME}.rc")
 target_include_directories(${OUTPUT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-target_link_libraries(${OUTPUT_NAME} PRIVATE libparabolic Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Svg)
+target_link_libraries(${OUTPUT_NAME} PRIVATE libparabolic Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Svg qlementine::qlementine qlementine-icons::qlementine-icons)
 if(WIN32)
     set_target_properties(${OUTPUT_NAME} PROPERTIES WIN32_EXECUTABLE ON)
 endif()

@@ -3,6 +3,8 @@
 
 #include <memory>
 #include <QApplication>
+#include <oclero/qlementine/style/QlementineStyle.hpp>
+#include <oclero/qlementine/style/ThemeManager.hpp>
 #include "controllers/mainwindowcontroller.h"
 #include "views/mainwindow.h"
 
@@ -32,6 +34,8 @@ namespace Nickvision::TubeConverter::Qt
     private:
         std::shared_ptr<Shared::Controllers::MainWindowController> m_controller;
         std::shared_ptr<Views::MainWindow> m_mainWindow;
+        oclero::qlementine::QlementineStyle* m_style;
+        oclero::qlementine::ThemeManager* m_themeManager;
     };
 }
 

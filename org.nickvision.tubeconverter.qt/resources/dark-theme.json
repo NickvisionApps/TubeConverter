@@ -1,0 +1,93 @@
+{
+    "meta": {
+      "author": "Nicholas Logozzo",
+      "name": "Dark",
+      "version": "1.0.0"
+    },
+  
+    "useSystemFonts": true,
+
+    "backgroundColorMain1": "#303030",
+    "backgroundColorMain2": "#242424",
+    "backgroundColorMain3": "#1e1e1e",
+    "backgroundColorMain4": "#303030",
+  
+    "backgroundColorWorkspace": "#1e1e1e",
+    "backgroundColorTabBar": "#1e1e1e",
+  
+    "borderColor": "#2a2a2a",
+    "borderColorHovered": "#2a2a2a",
+    "borderColorPressed": "#2a2a2a",
+    "borderColorDisabled": "#2a2a2a",
+  
+    "focusColor": "#34988666",
+  
+    "neutralColor": "#565656",
+    "neutralColorHovered": "#4c4c4c",
+    "neutralColorPressed": "#404040",
+    "neutralColorDisabled": "#353535",
+  
+    "primaryColor": "#3584e4",
+    "primaryColorHovered": "#0461be",
+    "primaryColorPressed": "#0461be",
+    "primaryColorDisabled": "#81d0ff",
+  
+    "primaryAlternativeColor": "#2190a4",
+    "primaryAlternativeColorHovered": "#007184",
+    "primaryAlternativeColorPressed": "#007184",
+    "primaryAlternativeColorDisabled": "#7bdff4",
+  
+    "primaryColorForeground": "#ffffff",
+    "primaryColorForegroundHovered": "#ffffff",
+    "primaryColorForegroundPressed": "#ffffff",
+    "primaryColorForegroundDisabled": "#ecf6ff",
+  
+    "secondaryColor": "#ffffff",
+    "secondaryColorHovered": "#d5d5d5",
+    "secondaryColorPressed": "#ebebeb",
+    "secondaryColorDisabled": "#ffffff33",
+  
+    "secondaryAlternativeColor": "#909090",
+    "secondaryAlternativeColorHovered": "#747474",
+    "secondaryAlternativeColorPressed": "#828282",
+    "secondaryAlternativeColorDisabled": "#c3c3c3",
+  
+    "secondaryColorForeground": "#2f2f2f",
+    "secondaryColorForegroundHovered": "#2f2f2f",
+    "secondaryColorForegroundPressed": "#2f2f2f",
+    "secondaryColorForegroundDisabled": "#2f2f2f",
+  
+    "semiTransparentColor1": "#ffffff18",
+    "semiTransparentColor2": "#ffffff23",
+    "semiTransparentColor3": "#ffffff28",
+    "semiTransparentColor4": "#ffffff2d",
+  
+    "shadowColor1": "#00000066",
+    "shadowColor2": "#000000bb",
+    "shadowColor3": "#000000ff",
+  
+    "statusColorForeground": "#ffffff",
+    "statusColorForegroundHovered": "#ffffff",
+    "statusColorForegroundPressed": "#ffffff",
+    "statusColorForegroundDisabled": "#ecf6ff",
+  
+    "statusColorError": "#e01b24",
+    "statusColorErrorHovered": "#c30000 ",
+    "statusColorErrorPressed": "#c01c28",
+    "statusColorErrorDisabled": "#ff938c",
+  
+    "statusColorInfo": "#3584e4",
+    "statusColorInfoHovered": "#0461be",
+    "statusColorInfoPressed": "#0461be",
+    "statusColorInfoDisabled": "#81d0ff",
+  
+    "statusColorSuccess": "#2ec27e",
+    "statusColorSuccessHovered": "#007c3d",
+    "statusColorSuccessPressed": "#26a269",
+    "statusColorSuccessDisabled": "#78e9ab",
+  
+    "statusColorWarning": "#e5a50a",
+    "statusColorWarningHovered": "#905400",
+    "statusColorWarningPressed": "#cd9309",
+    "statusColorWarningDisabled": "#ffc252"
+}

@@ -34,7 +34,7 @@ parts:
     plugin: python
     source: .
     python-packages:
-      - yt-dlp==2025.01.26
+      - yt-dlp==2025.02.19
     stage:
       - -bin/activate*
       - -bin/Activate.ps1

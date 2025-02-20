@@ -14,10 +14,11 @@ using namespace Nickvision::TubeConverter::Shared::Models;
 
 namespace Nickvision::TubeConverter::Qt::Views
 {
-    SettingsPage::SettingsPage(const std::shared_ptr<PreferencesViewController>& controller, QWidget* parent)
+    SettingsPage::SettingsPage(const std::shared_ptr<PreferencesViewController>& controller, oclero::qlementine::ThemeManager* themeManager, QWidget* parent)
         : QWidget{ parent },
         m_ui{ new Ui::SettingsPage() },
-        m_controller{ controller }
+        m_controller{ controller },
+        m_themeManager{ themeManager }
     {
         m_ui->setupUi(this);
         //Localize Strings
@@ -176,16 +177,19 @@ namespace Nickvision::TubeConverter::Qt::Views
 
     void SettingsPage::onThemeChanged(int index)
     {
-        switch (static_cast<Theme>(m_ui->cmbTheme->currentIndex()))
+        switch (static_cast<Shared::Models::Theme>(m_ui->cmbTheme->currentIndex()))
         {
-        case Theme::Light:
+        case Shared::Models::Theme::Light:
             QApplication::styleHints()->setColorScheme(::Qt::ColorScheme::Light);
+            m_themeManager->setCurrentTheme("Light");
             break;
-        case Theme::Dark:
+        case Shared::Models::Theme::Dark:
             QApplication::styleHints()->setColorScheme(::Qt::ColorScheme::Dark);
+            m_themeManager->setCurrentTheme("Dark");
             break;
         default:
-            QApplication::styleHints()->setColorScheme(::Qt::ColorScheme::Unknown);
+            QApplication::styleHints()->unsetColorScheme();
+            m_themeManager->setCurrentTheme(QApplication::styleHints()->colorScheme() == ::Qt::ColorScheme::Light ? "Light" : "Dark");
             break;
         }
     }

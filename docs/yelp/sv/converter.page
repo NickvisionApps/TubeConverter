@@ -20,7 +20,7 @@
 <terms>
     <item>
         <title>Bädda in metadata</title>
-        <p>If enabled, Parabolic will tag a media with its relevant information (title, genre, etc...) if available.</p>
+        <p>Om aktiverat kommer Parabolic att tagga ett media med dess relevanta information (titel, genre, etc...) om tillgängligt.</p>
         <note style="advanced">
             <p>Standard: På</p>
         </note>
@@ -37,9 +37,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
-        <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <title>Bädda in tumnaglar</title>
+        <p>Om det är aktiverat kommer Parabolic att bädda in ett media med dess miniatyrbild om det finns tillgängligt.</p>
+        <p>Om filtypen inte stöder inbäddning skrivs miniatyrbilden till en separat bildfil.</p>
         <note style="advanced">
             <p>Standard: På</p>
         </note>
@@ -48,7 +48,7 @@
         <title>Beskär ljudminiatyrbilder</title>
         <p>Om aktiverat kommer Parabolic att beskära miniatyrbilder för ljudfiler till en kvadratisk upplösning.</p>
         <note>
-            <p>This option is only configurable if <code>Embed Thumbnails</code> is on.</p>
+            <p>Det här alternativet är bara konfigurerbart om <code>Bädda in tumnaglar</code> är aktiverat.</p>
         </note>
         <note style="advanced">
             <p>Standard: Av</p>
@@ -63,7 +63,7 @@
     </item>
     <item>
         <title>Bädda in undertexter</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>Om det är inaktiverad eller om inbäddning inte stöds, kommer nedladdade undertexter att sparas i en separat fil.</p>
         <note style="advanced">
             <p>Standard: På</p>
         </note>

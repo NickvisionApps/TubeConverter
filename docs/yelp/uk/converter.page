@@ -26,7 +26,7 @@
 <terms>
     <item>
         <title>Вставити метадані</title>
-        <p>If enabled, Parabolic will tag a media with its relevant information (title, genre, etc...) if available.</p>
+        <p>Якщо увімкнено, Parabolic додасть до медіа відповідні теги (назва, жанр тощо), якщо вони доступні.</p>
         <note style="advanced">
             <p>За замовчуванням: Ввімк</p>
         </note>
@@ -43,9 +43,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
-        <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <title>Вбудовані ескізи</title>
+        <p>Якщо увімкнено, Parabolic вбудує ескіз у медіа, якщо він доступний.</p>
+        <p>Якщо тип файлу не підтримує вбудовування, ескіз буде збережено окремим зображенням.</p>
         <note style="advanced">
             <p>За замовчуванням: Ввімк</p>
         </note>
@@ -54,7 +54,7 @@
         <title>Обрізати мініатюри аудіо</title>
         <p>Якщо ввімкнено, Parabolic обрізає ескізи для аудіофайлів до квадратної роздільної здатності.</p>
         <note>
-            <p>This option is only configurable if <code>Embed Thumbnails</code> is on.</p>
+            <p>Цю опцію можна налаштувати лише при ввімкненій функції <code>Вбудовувати ескізи</code>.</p>
         </note>
         <note style="advanced">
             <p>За замовчуванням: Вимк</p>
@@ -69,7 +69,7 @@
     </item>
     <item>
         <title>Вбудовані субтитри</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>Якщо вимкнено або вбудовування не підтримується, завантажені субтитри зберігатимуться окремим файлом.</p>
         <note style="advanced">
             <p>За замовчуванням: Ввімк</p>
         </note>

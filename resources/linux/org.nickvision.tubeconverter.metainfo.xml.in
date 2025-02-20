@@ -55,14 +55,9 @@
     <binary>@PROJECT_NAME@</binary>
   </provides>
   <releases>
-    <release version="2025.1.4" date="2025-01-30">
+    <release version="2025.2.0-next" date="2025-02-01">
       <description translate="no">
-        <p>- Added a new Embed Thumbnails option in Preferences to enable/disable Parabolic's downloading of thumbnails separate from metadata</p>
-        <p>- Added a disclaimer about embedding thumbnails/subtitles when using generic file types</p>
-        <p>- Fixed an issue where the incorrect previous video and/or audio format was selected</p>
-        <p>- Fixed an issue where chapters were embedded even if the option was disabled</p>
-        <p>- Fixed an issue where splitting media by chapters would result in incorrect media lengths in the split files</p>
-        <p>- Fixed an issue where video and audio formats were not selectable on GNOME</p>
+        <p>- Updated yt-dlp to fix some website validation issues</p>
       </description>
     </release>
   </releases>

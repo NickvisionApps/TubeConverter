@@ -18,6 +18,8 @@
     ],
     "cleanup":[
         "/include",
+        "/lib/cmake",
+        "/lib/debug",
         "/lib/pkgconfig",
         "*.a"
     ],
@@ -78,16 +80,16 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2025-01-27-14-15/ffmpeg-n7.1-184-gdc07f98934-linux64-gpl-7.1.tar.xz",
-                    "sha256": "1ce51162bfb3b0067e7bfcb834437c480e07ceb2d2aeacaa377949e1a5f09a06",
+                    "url": "https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2025-02-11-15-46/ffmpeg-n7.1-194-g745e70f1d5-linux64-gpl-7.1.tar.xz",
+                    "sha256": "24f73a3b178e703c45be8d40d6c1de0a65e3b5c27f11ccb050eb3eb2ad46f9a2",
                     "only-arches": [
                         "x86_64"
                     ]
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2025-01-27-14-15/ffmpeg-n7.1-184-gdc07f98934-linuxarm64-gpl-7.1.tar.xz",
-                    "sha256": "4c5402e71452b5e70eacf89c4cf452d4a671bd684b8974542b96aaa4be52aebe",
+                    "url": "https://github.com/yt-dlp/FFmpeg-Builds/releases/download/autobuild-2025-02-11-15-46/ffmpeg-n7.1-194-g745e70f1d5-linuxarm64-gpl-7.1.tar.xz",
+                    "sha256": "ccb3a3af75d04b2b7ffb53378fb68dd7a9fd970fa0fdbbc063c68e33c2239c15",
                     "only-arches": [
                         "aarch64"
                     ]
@@ -125,7 +127,9 @@
             "name": "libxmlplusplus",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dmaintainer-mode=false"
+                "-Dmaintainer-mode=false",
+                "-Dbuild-examples=false",
+                "-Dbuild-tests=false"
             ],
             "sources": [
                 {

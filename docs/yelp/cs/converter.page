@@ -26,7 +26,7 @@
 <terms>
     <item>
         <title>Vložit metadata</title>
-        <p>If enabled, Parabolic will tag a media with its relevant information (title, genre, etc...) if available.</p>
+        <p>Pokud je tato funkce povolena, aplikace Parabolic označí médium příslušnými informacemi (název, žánr atd.), pokud jsou k dispozici.</p>
         <note style="advanced">
             <p>Výchozí: zapnuto</p>
         </note>
@@ -43,9 +43,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
-        <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <title>Vkládat miniatury</title>
+        <p>Pokud je tato funkce povolena, aplikace Parabolic vloží do média jeho miniaturu, pokud jsou dostupná.</p>
+        <p>Pokud typ souboru nepodporuje vkládání, bude miniatura uložena do samostatného souboru.</p>
         <note style="advanced">
             <p>Výchozí: zapnuto</p>
         </note>
@@ -54,7 +54,7 @@
         <title>Oříznout miniatury zvuku</title>
         <p>Pokud je tato funkce povolena, aplikace Parabolic ořízne miniatury zvukových souborů tak, aby měly čtvercové rozlišení.</p>
         <note>
-            <p>This option is only configurable if <code>Embed Thumbnails</code> is on.</p>
+            <p>Tato možnost je nastavitelná pouze při zapnutém nastavení <code>Vkládat miniatury</code>.</p>
         </note>
         <note style="advanced">
             <p>Výchozí: vypnuto</p>
@@ -69,7 +69,7 @@
     </item>
     <item>
         <title>Vložit titulky</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>Pokud je vložení zakázáno nebo selže, budou stažené titulky uloženy do samostatného souboru.</p>
         <note style="advanced">
             <p>Výchozí: zapnuto</p>
         </note>

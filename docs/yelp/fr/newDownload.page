@@ -45,20 +45,20 @@
         </note>
     </item>
     <item>
-        <title>Video Format</title>
-        <p>The list of video formats available for download, sorted by resolution and bitrate.</p>
-        <p>Each format is the form: <code>resolution | bitrate | codec (id)</code>.</p>
-        <p>If the file type is an audio type, this option will not be available.</p>
+        <title>Format vidéo</title>
+        <p>La liste de formats vidéo disponibles pour le téléchargement, triée par résolution et débit.</p>
+        <p>Chaque format est présenté dans la forme suivante : <code>résolution | débit | codec (id)</code>.</p>
+        <p>Si le type de fichier est un audio, cette option ne sera pas disponible.</p>
         <note>
-            <p>The previously used video format will be remembered and pre-selected for the next download.</p>
+            <p>Le format vidéo sélectionné précédemment sera mémorisé et présélectionné pour le prochain téléchargement.</p>
         </note>
     </item>
     <item>
-        <title>Audio Format</title>
-        <p>The list of audio formats available for download, sorted by bitrate.</p>
-        <p>Each format is the form: <code>bitrate | language (id)</code>.</p>
+        <title>Format audio</title>
+        <p>La liste des formats audio disponibles pour le téléchargement, triée par débit.</p>
+        <p>Chaque format est présenté sous la forme suivante : <code>débit | langue (id)</code>.</p>
         <note>
-            <p>The previously used audio format will be remembered and pre-selected for the next download.</p>
+            <p>Le format audio sélectionné précédemment sera mémorisé et présélectionné pour le prochain téléchargement.</p>
         </note>
     </item>
     <item>
@@ -83,7 +83,7 @@
         </note>
     </item>
     <item>
-        <title>Export Description</title>
+        <title>Exporter la description</title>
         <p>Si cette option est activée, Parabolic exportera la description du média vers un fichier <code>.description</code> en même temps que le fichier téléchargé.</p>
         <note>
             <p>Les paramètres utilisés précédemment seront mémorisés et présélectionnés pour le prochain téléchargement.</p>

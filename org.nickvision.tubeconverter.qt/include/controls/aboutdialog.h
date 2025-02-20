@@ -20,17 +20,24 @@ namespace Nickvision::TubeConverter::Qt::Controls
         /**
          * @brief Constructs an AboutDialog.
          * @param appInfo The AppInfo object for the application
-         * @param debugInfo The debug information for the application
+         * @param debugInformation The debug information for the application
          * @param parent The parent widget
          */
-        AboutDialog(const App::AppInfo& appInfo, const std::string& debugInfo, QWidget* parent = nullptr);
+        AboutDialog(const App::AppInfo& appInfo, const std::string& debugInformation, QWidget* parent = nullptr);
         /**
          * @brief Destructs an AboutDialog.
          */
         ~AboutDialog();
 
+    private Q_SLOTS:
+        /**
+         * @brief Copies the debug information to the clipboard.
+         */
+        void copyDebugInformation();
+
     private:
         Ui::AboutDialog* m_ui;
+        QString m_debugInformation;
     };
 }
 

@@ -72,7 +72,7 @@ namespace Nickvision::TubeConverter::GNOME::Helpers
          * @brief Returns the underlying pointer.
          * @return T*
          */
-        T* operator->()
+        T* operator->() const
         {
             return m_ptr;
         }

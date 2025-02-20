@@ -20,7 +20,7 @@
 <terms>
     <item>
         <title>Inclure les métadonnées</title>
-        <p>If enabled, Parabolic will tag a media with its relevant information (title, genre, etc...) if available.</p>
+        <p>Si cette option est activée, Parabolic inclura dans le média téléchargé ses données pertinentes (titre, genre, etc…), si disponibles.</p>
         <note style="advanced">
             <p>Par défaut : Activée</p>
         </note>
@@ -37,9 +37,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
-        <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <title>Inclure les vignettes</title>
+        <p>Si cette option est activée, Parabolic inclura dans un média sa vignette, si disponible.</p>
+        <p>Si le type de fichier ne prend pas en charge l’inclusion d’une vignette, celle-ci sera exportée vers un fichier d’image séparé.</p>
         <note style="advanced">
             <p>Par défaut : Activée</p>
         </note>
@@ -48,7 +48,7 @@
         <title>Rogner les vignettes des fichiers audio</title>
         <p>Si cette option est activée, Parabolic découpera la vignette des fichiers audio pour obtenir une résolution carrée.</p>
         <note>
-            <p>This option is only configurable if <code>Embed Thumbnails</code> is on.</p>
+            <p>Cette option est configurable uniquement si l’ <code>inclusion des vignettes</code> est activée.</p>
         </note>
         <note style="advanced">
             <p>Par défaut : Désactivée</p>
@@ -63,7 +63,7 @@
     </item>
     <item>
         <title>Inclure les sous-titres</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>Si cette option est désactivée ou si l’inclusion n’est pas prise en charge, les sous-titres téléchargés seront enregistrés dans un fichier séparé.</p>
         <note style="advanced">
             <p>Par défaut : Activée</p>
         </note>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="downloads" its:version="2.0" xml:lang="sr">
+<info>
+	<link type="guide" xref="index"/>
+	<title type="link">Downloads 🌐</title>
+	<credit type="author copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<credit type="publisher copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
+</info>
+
+<title>Downloads</title>
+<p>This page explains all options for configuring Downloads in Preferences in <app>Parabolic</app>.</p>
+
+
+<terms>
+    <item>
+		<title>Maximum Number of Active Downloads</title>
+		<p>The number of active downloads allowed to run at a time. Must be an integer value between 1 and 10.</p>
+        <p>If the max number of active downloads is reached, Parabolic will place new downloads in a queue until more downloads are able to be run.</p>
+		<note style="advanced">
+			<p>Default: 5</p>
+		</note>
+    </item>
+    <item>
+        <title>Overwrite Existing Files</title>
+        <p>If enabled, Parabolic will overwrite existing files.</p>
+        <p>For example, if a file named <code>movie.mp4</code> exists in the download folder, and a new download is created named <code>movie</code>, <code>movie.mp4</code> will be overwritten with the new download's content.</p>
+        <note>
+            <p>Parabolic will detect downloads that should be resumed and avoid this setting when recovering or retrying failed downloads</p>
+        </note>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+		<title>Limit Filename Characters</title>
+		<p>Restricts characters in filenames to only those supported by Windows.</p>
+        <p>This option is only available on Linux.</p>
+		<note style="advanced">
+			<p>Default: Off</p>
+		</note>
+    </item>
+    <item>
+        <title>Included Media Id in Title After Validation</title>
+        <p>Whether or not to included the media's id in the title (file name) when validated.</p>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+        <title>Included Auto-Generated Subtitles</title>
+        <p>Whether or not to included subtitles that are auto-translated to fit the requested subtitle languages.</p>
+        <note style="advanced">
+            <p>Default: On</p>
+        </note>
+    </item>
+    <item>
+        <title>Preferred Video Codec</title>
+        <p>The video codec Parabolic should prefer when selecting media formats to download.</p>
+        <note style="advanced">
+            <p>Default: Any</p>
+        </note>
+    </item>
+    <item>
+        <title>Preferred Subtitle Format</title>
+        <p>The file format Parabolic should ensure all downloaded subtitles are downloaded as.</p>
+        <note style="advanced">
+            <p>Default: Any</p>
+        </note>
+    </item>
+</terms>
+</page>

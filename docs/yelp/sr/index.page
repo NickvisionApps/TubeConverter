@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index" its:version="2.0" xml:lang="sr">
+<info>
+	<title type="link">Parabolic Help</title>
+	<title type="text">Parabolic Help</title>
+	<credit type="author copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<credit type="publisher copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
+</info>
+
+<title><media its:translate="no" type="image" src="figures/parabolic.png"/> Parabolic Help</title>
+<p>This documentation will help you understand how to configure <app>Parabolic</app> to get the most of the application.</p>
+<p>To get support, use <link href="https://github.com/NickvisionApps/Parabolic/issues">issues</link> or <link href="https://github.com/NickvisionApps/Parabolic/discussions">discussions</link> on Github, or <link href="https://bit.ly/3GrfEid">join our Matrix channel</link>.</p>
+<p>The authors of Nickvision Parabolic are not responsible/liable for any misuse of this program that may violate local copyright/DMCA laws. Users use this application at their own risk.</p>
+</page>

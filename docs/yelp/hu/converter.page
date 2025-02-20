@@ -14,7 +14,7 @@
 	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
 </info>
 
-<title>Kódoló</title>
+<title>Feldolgozás</title>
 <p>This page explains all options for configuring the Converter in Preferences in <app>Parabolic</app>.</p>
 
 <terms>
@@ -37,9 +37,9 @@
         </note>
     </item>
     <item>
-        <title>Embed Thumbnails</title>
+        <title>Borítókép beágyazása</title>
         <p>If enabled, Parabolic will embed a media with its thumbnail if available.</p>
-        <p>If the file type does not support embedding, the thumbnail will be written to a separate image file.</p>
+        <p>Amennyiben a fájlformátum ezt nem támogatja, úgy a borítókép külön fájlként kerül letöltésre.</p>
         <note style="advanced">
             <p>Default: On</p>
         </note>
@@ -63,7 +63,7 @@
     </item>
     <item>
         <title>Feliratok beágyazása</title>
-        <p>If disabled or if embedding is not supported, downloaded subtitles will be saved to a separate file.</p>
+        <p>Ha a beágyazás nem lehetséges a feliratok külön fájlokként lesznek letöltve</p>
         <note style="advanced">
             <p>Default: On</p>
         </note>

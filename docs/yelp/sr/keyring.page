@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="keyring" its:version="2.0" xml:lang="sr">
+<info>
+	<link type="guide" xref="index"/>
+	<title type="link">Keyring 🔑</title>
+	<credit type="author copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<credit type="publisher copyright">
+		<name>Nicholas Logozzo</name>
+		<years its:translate="no">2023-2024</years>
+	</credit>
+	<license href="http://creativecommons.org/licenses/by/4.0/" its:translate="no"><p>Creative Commons Attribution 4.0 International License</p></license>
+</info>
+
+<title>Keyring</title>
+<p>This page explains all options for using the Keyring in <app>Parabolic</app>.</p>
+<section>
+    <title>Backend</title>
+    <p>The Keyring feature is backed by the <code>libnick</code> library.</p>
+    <p>This library uses SQLCipher to securely store credentials in a platform independent manner.</p>
+    <p>The library will use your system's credential manager (i.e. DBus secret service on Linux and Windows Credential Manager on Windows) for securing the Keyring database file.</p>
+</section>
+<section>
+    <title>Storing a Credential</title>
+    <p>Here are the fields that can be stored in a credential:</p>
+    <p><code>Name</code>: The name of the credential</p>
+    <p><code>URL</code> (optional): The URL of the credential</p>
+    <p><code>Username</code> (optional if password is not empty): The username of the credential</p>
+    <p><code>Password</code> (optional if username is not empty): The password of the credential</p>
+</section>
+</page>

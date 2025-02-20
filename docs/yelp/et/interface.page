@@ -19,7 +19,7 @@
 
 <terms>
     <item>
-        <title>Theme</title>
+        <title>Kujundus</title>
         <p>The theme for the user interface.</p>
         <note style="advanced">
             <p>Default: System</p>
@@ -33,14 +33,14 @@
         </note>
     </item>
     <item>
-        <title>Prevent Suspend</title>
+        <title>Keela arvuti uinumine</title>
         <p>If enabled, the system while be prevented from suspending while Parabolic is running.</p>
         <note style="advanced">
-            <p>Default: Off</p>
+            <p>Vakimisi: pole kasutusel</p>
         </note>
     </item>
     <item>
-        <title>Recover Crashed Downloads</title>
+        <title>Taasta kokkujooksnud allalaadimised</title>
         <p>If enabled, Parabolic will track the running and queued downloads and restart them if necessary if the application crashes and is restarted.</p>
         <note style="advanced">
             <p>Default: On</p>
@@ -50,11 +50,11 @@
         <title>Laadi alla kohe peale valideerimist</title>
 		<p>Bypasses the download options selection in the Add Download dialog and immediately downloads a validated media using previously selected options.</p>
         <note style="advanced">
-            <p>Default: Off</p>
+            <p>Vakimisi: pole kasutusel</p>
         </note>
     </item>
     <item>
-        <title>Download History Length</title>
+        <title>Kirjete vanus allalaadimisete ajaloos</title>
         <p>The amount of time to keep download history saved.</p>
         <note style="advanced">
             <p>Default: One Week</p>
